@@ -11,9 +11,7 @@ html {
     min-height: 100%;
     overflow-x: hidden;
 }
-body{
-   height : 2200px;
-}
+ 
 *{
     margin: 0;
     padding: 0;
