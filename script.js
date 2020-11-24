@@ -1,8 +1,126 @@
-var submit = document.getElementById("sub")
+// partner page start
+
+   var cards = document.querySelectorAll(".partnerCard")
+   
+   for(var i = 0; i < cards.length; i++){
+   
+   if( i === 0){
+      cards[0].addEventListener("mouseover",partnerColorChange1)
+      cards[0].addEventListener("mouseout",backToOriginal1)
+   }
+   else if( i===1 ){
+      cards[1].addEventListener("mouseover",partnerColorChange2)
+      cards[1].addEventListener("mouseout",backToOriginal2)
+   }
+   else{
+      cards[2].addEventListener("mouseover",partnerColorChange3)
+      cards[2].addEventListener("mouseout",backToOriginal3)
+   }
+   
+   }
+  
+
+   function partnerColorChange1(){
+      var top = document.querySelectorAll(".cardTop")
+         for( var i = 0; i < top.length; i++){
+            top[0].style.backgroundImage = "linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1)";
+         }
+      var bottom = document.querySelectorAll(".partnerBtn")
+         for( var i = 0; i < top.length; i++){
+            bottom[0].style.backgroundImage = "linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1)";
+         }
+      
+      var btn = document.querySelectorAll(".primaryBtn")
+         for( var i = 0; i < btn.length; i++){
+            btn[0].style.border = none;
+           
+         }
+       
+   }
+   
+   function backToOriginal1(){
+      var top = document.querySelectorAll(".cardTop")
+      for( var i = 0; i < top.length; i++){
+         top[0].style.backgroundImage = "linear-gradient(to right, #fff 0%, #fff 100%), radial-gradient(circle at top left, #fff, #fff)"; 
+      }
+      var bottom = document.querySelectorAll(".partnerBtn")
+      for( var i = 0; i < top.length; i++){
+         bottom[0].style.backgroundImage = "linear-gradient(to right, #fff 0%, #fff 100%), radial-gradient(circle at top left, #fff, #fff)"; 
+      }
+   }
+   
+   function partnerColorChange2(){
+      var top = document.querySelectorAll(".cardTop")
+         for( var i = 0; i < top.length; i++){
+            top[1].style.backgroundImage = "linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1)";
+         }
+      var bottom = document.querySelectorAll(".partnerBtn")
+         for( var i = 0; i < top.length; i++){
+            bottom[1].style.backgroundImage = "linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1)";
+         }
+      
+      var btn = document.querySelectorAll(".primaryBtn")
+         for( var i = 0; i < btn.length; i++){
+            btn[1].style.border = none;
+           
+         }
+       
+   }
+   
+   function backToOriginal2(){
+      var top = document.querySelectorAll(".cardTop")
+      for( var i = 0; i < top.length; i++){
+         top[1].style.backgroundImage = "linear-gradient(to right, #fff 0%, #fff 100%), radial-gradient(circle at top left, #fff, #fff)"; 
+      }
+      var bottom = document.querySelectorAll(".partnerBtn")
+      for( var i = 0; i < top.length; i++){
+         bottom[1].style.backgroundImage = "linear-gradient(to right, #fff 0%, #fff 100%), radial-gradient(circle at top left, #fff, #fff)"; 
+      }
+   }
+   
+   
+   function partnerColorChange3(){
+      var top = document.querySelectorAll(".cardTop")
+         for( var i = 0; i < top.length; i++){
+            top[2].style.backgroundImage = "linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1)";
+         }
+      var bottom = document.querySelectorAll(".partnerBtn")
+         for( var i = 0; i < top.length; i++){
+            bottom[2].style.backgroundImage = "linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1)";
+         }
+      
+      var btn = document.querySelectorAll(".primaryBtn")
+         for( var i = 0; i < btn.length; i++){
+            btn[2].style.border = none;
+           
+         }
+       
+   }
+   
+   function backToOriginal3(){
+      var top = document.querySelectorAll(".cardTop")
+      for( var i = 0; i < top.length; i++){
+         top[2].style.backgroundImage = "linear-gradient(to right, #fff 0%, #fff 100%), radial-gradient(circle at top left, #fff, #fff)"; 
+      }
+      var bottom = document.querySelectorAll(".partnerBtn")
+      for( var i = 0; i < top.length; i++){
+         bottom[2].style.backgroundImage = "linear-gradient(to right, #fff 0%, #fff 100%), radial-gradient(circle at top left, #fff, #fff)"; 
+      }
+   }
+   
+   
+   
+   
+
+// partner page end
+
+
+
+// var submit = document.getElementById("sub")
  
-submit.addEventListener("click",function(e){
-   e.preventDefault(); 
-})
+// submit.addEventListener("click",function(e){
+//    e.preventDefault(); 
+// })
 
 
 

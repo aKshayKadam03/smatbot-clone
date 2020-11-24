@@ -53,12 +53,13 @@ html {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
-    padding: 0.5%;
-    position: -webkit-sticky;
-    position: sticky;
+    padding: 0.2% 2.5%;
+    width: 95%;
+    position: fixed;
     top: 0;
     background-color: white;
     z-index: 99999999;
+    box-shadow: 1px 1px 10px rgb(218, 214, 214);
  }
  
  #nav a{
@@ -84,6 +85,7 @@ html {
  #nav div{
     flex-basis: 7%;
     margin: 5px;
+   
  }
  
  .gap{
@@ -256,6 +258,7 @@ button {
   width: 24%;
   font-size: 19px;
   border-radius: 25px;
+  padding: 50px 0;
 }
 
 .smat:hover{
@@ -323,7 +326,7 @@ button {
       background-repeat: no-repeat;
       background-size: auto;
       height: 760px;
-      margin-top: -20px; 
+      margin-top: 60px; 
     }
     
     #sectionHeader > .flex >.sectionHeaderOne{
@@ -680,9 +683,6 @@ button {
   border: 1px solid black;
 }
 
- 
-
-
   /*---------------------------------------------- Footer Start ------------------------------------- */
   #footer{
     width: 100%;
@@ -690,6 +690,7 @@ button {
     left: 0;
     bottom: 0;
     width: 100%;
+    background-color: #FAFAFB;
   }
   
   .grid{
@@ -814,6 +815,7 @@ button {
   /*---------------------------------------------- Media Queries Start ------------------------------------- */
  
  
+  
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
       .flex{

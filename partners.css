@@ -6,99 +6,102 @@ font-family: 'Rubik', sans-serif;
 
 */
 
+
 html {
-    position: relative;
-    min-height: 100%;
-    overflow-x: hidden;
+   position: relative;
+   min-height: 100%;
+   overflow-x: hidden;
 }
- body{
-  height: 1500px;
- }
+body{
+ height: 1500px;
+ position: relative;
+}
 *{
-    margin: 0;
-    padding: 0;
- }
- 
- button{
-    padding: 10px;
-    text-transform: uppercase;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    border: 1px solid transparent; 
-    border-radius: 5px;
-    width: 90%;
-    min-width: 145px;
-    margin-left: 10px;
- }
- .primaryBtn{
-    background-image: linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
-    color: white;
- }
+   margin: 0;
+   padding: 0;
+}
+
+button{
+   padding: 10px;
+   text-transform: uppercase;
+   font-family: 'Rajdhani', sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+   letter-spacing: 0.5px;
+   cursor: pointer;
+   border: 1px solid transparent; 
+   border-radius: 5px;
+   width: 90%;
+   min-width: 145px;
+   margin-left: 10px;
+}
+.primaryBtn{
+   background-image: linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
+   color: white;
+}
 .primaryBtn:hover {
-    background-image: linear-gradient(to right, white 0%, white 100%);
-    color: black;
-    border : 2px solid #8252FA;
+   background-image: linear-gradient(to right, white 0%, white 100%);
+   color: black;
+   border : 2px solid #8252FA;
 }
 .primaryBtn:active {
-  border : 2px solid #8252FA;
+ border : 2px solid #8252FA;
 } 
- 
- /*---------------------------------------------- Navigation Start ------------------------------------- */
- #nav{
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 16px;
-    padding: 0.5%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 99999999;
- }
- 
- #nav a{
-    text-decoration: none;
-    color: #000;
- }
- #nav a:active, #nav a:hover{
-    text-decoration: none;
-    color: #8252fa;
- }
- 
- .flex{
-    display: flex;
-    align-items: center;
-    text-align: center;
- }
- 
- #nav  img{
-    height: 50px;
-    margin-left: 15px;
- }
- 
- #nav div{
-    flex-basis: 7%;
-    margin: 5px;
- }
- 
- .gap{
-    flex-grow: 1;
- }
- 
 
- .whiteBtn{
-    background-color: white;
-    color: black;
-    border : 2px solid #8252FA;
- }
- 
- /*---------------------------------------------- Navigation End ------------------------------------- */
- 
- 
+/*---------------------------------------------- Navigation Start ------------------------------------- */
+#nav{
+   font-family: 'Rajdhani', sans-serif;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-size: 16px;
+   padding: 0.2% 2.5%;
+   width: 95%;
+   position: fixed;
+   top: 0;
+   background-color: white;
+   z-index: 99999999;
+   box-shadow: 1px 1px 10px rgb(218, 214, 214);
+}
+
+#nav a{
+   text-decoration: none;
+   color: #000;
+}
+#nav a:active, #nav a:hover{
+   text-decoration: none;
+   color: #8252fa;
+}
+
+.flex{
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
+
+#nav  img{
+   height: 50px;
+   margin-left: 15px;
+}
+
+#nav div{
+   flex-basis: 7%;
+   margin: 5px;
+  
+}
+
+.gap{
+   flex-grow: 1;
+}
+
+
+.whiteBtn{
+   background-color: white;
+   color: black;
+   border : 2px solid #8252FA;
+}
+
+/*---------------------------------------------- Navigation End ------------------------------------- */
+
 /*---------------------------------------------- Partner Start ------------------------------------- */
    
  #partner{
@@ -117,33 +120,158 @@ html {
    margin-bottom:20px;
  }
  
- #partner > .partnerHead{
-      font-family: 'Rubik', sans-serif;
+ #partner > .partnerHead,#contact > .partnerHead {
+   font-family: 'Rajdhani', sans-serif;
       letter-spacing: 2px;
-      font-size:30px;
+      font-size:34px;
       font-weight: 600;
       text-transform: capitalize;
       text-align: center;  
  }
  #partner > .gridPartner{
-   width: 90%;
+   width: 80%;
    margin: 50px auto;
    display: grid;
    grid-template-columns: 30% 30% 30%; 
+   grid-template-rows: 550px;
+   grid-gap: 3%; 
  }
  
+ #partner > .gridPartner > div{
+    
+   box-shadow: 1px 1px 10px rgb(187, 185, 185);
+   border-radius: 5px;
+ }
  
+ #partner .cardTop{
+   text-align: center;
+   border-bottom: 1px solid #EEEEEE;
+   padding: 10px 30px;
+ }
  
+ #partner .cardHead{
+   font-family: 'Rajdhani', sans-serif;
+   font-weight: bold;
+   font-size: 25px;
+   margin: 10px 0;
+ }
  
+ #partner .cardDesignation{
+   font-family: 'Rubik', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   margin: 10px 0;
+ }
  
+  #partner .cardSubhead{
+   padding: 30px 20px;
+   height: 40px;
+   font-family: 'Lato', sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center; 
+  }
+ 
+  #partner ul{
+   padding: 15px 30px;
+  }
+  
+  #partner li{
+   margin-bottom: 15px;
+   font-size: 15px ;
+   color: #666 ;
+   font-family: 'Lato', sans-serif;
+  }
+  
+  #partner span{
+   font-weight: bold;
+   font-size: 16px;
+  }
+ 
+ #partner .partnerBtn{
+   width: 60%;
+   margin: auto;
+   padding: 40px; 
+   background-color: #FCF8FF;
+   border-radius: 5px;
+ }
+ #partner .primaryBtn{
+   width: 100%;
+   height: 60px;
+   margin: auto;
+   background-image: linear-gradient(to right, white 0%, white 100%);
+   color: black;
+   border : 2px solid #8252FA;
+ }
+ 
+ #partner .primaryBtn:hover{
+   border : 2px solid #8252FA;
+ }
+ 
+ #contact > .partnerHead{
+   margin-top: 200px;
+ }
  
  
   /*---------------------------------------------- Partner End ------------------------------------- */
  
+  /*---------------------------------------------- Contact Us Start ------------------------------------- */
+ 
+ 
+ 
+ #contact > .form{
+   width: 70%;
+   margin: 100px auto 100px;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-gap: 35px;
+ }
+ 
+ #contact > .form > div{
+   width: 90%;
+   border-radius: 5px;
+   border: 2px solid #B9B9B9;
+   padding: 10px 10px 10px 5px;
+   border-left: solid 3px #8252FA;
+ }
+ 
+ #contact > .form > div > input{
+   border: none;
+   outline: none;
+   font-size: 16px;
+   font-family: 'Lato', sans-serif;
+ }
+ #contact > .form > div > select{
+   border: none;
+   outline: none;
+   font-size: 16px;
+   font-family: 'Lato', sans-serif;
+   width: 100%; 
+}
+
+#contact #countrySelect{
+   width: auto;
+}
+ 
+#contact .contactBtn{
+   width: 10%;
+   margin: 0 auto 200px;
+   
+}
+
+#contact .primaryBtn{
+   width: 10%;
+   margin: auto;
+}
  
  
  
  
+ 
+ 
+ 
+ 
+  /*---------------------------------------------- Contact Us End ------------------------------------- */
  
  
  
@@ -154,6 +282,7 @@ html {
    left: 0;
    bottom: 0;
    width: 100%;
+   background-color: #FAFAFB;
  }
  
  .grid{
@@ -269,3 +398,205 @@ html {
 
 
  /*---------------------------------------------- Footer End ------------------------------------- */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  /*---------------------------------------------- Media Queries Start ------------------------------------- */
+ 
+ 
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+   .flex{
+       display: block;
+       min-width: 500px;
+   }
+   
+   
+   .grid{
+     min-width: 500px;
+     grid-template-columns: 100%;
+     justify-content: justify;
+     grid-template-areas: "a"
+                           "b"
+                           "c"
+                           "d"
+                           "e";                    
+     grid-gap: auto;  
+  
+   }
+   .grid > div{
+     min-width: 500px;
+     border: 1px solid black;
+     text-align: center;
+     padding: 0;
+     margin: 0; 
+   }
+   #footer .flex{
+     display: flex;
+     flex-direction: row;
+     margin-left: 15%;
+   }
+ 
+ 
+   
+}  
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   .flex{
+       display: flex;
+       align-items: center;
+       text-align: center;
+   }
+   
+   .grid{
+     min-width: 600px;
+     grid-template-columns: 100%;
+     justify-content: justify;
+     grid-template-areas: "a"
+                           "b"
+                           "c"
+                           "d"
+                           "e";                    
+     grid-gap: auto;  
+  
+   }
+   .grid > div{
+     min-width: 600px;
+     text-align: center;
+     padding: 0;
+     margin: 0; 
+   }
+     #footer .flex{
+     display: flex;
+     flex-direction: row;
+     margin-left: 15%;
+   }  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   
+    
+   .flex{
+       display: flex;
+       align-items: center;
+       text-align: center;
+   }
+   .grid{
+     min-width: 700px;
+     grid-template-columns: 50%;
+     justify-content: justify;
+     grid-template-areas: "a b"
+                           "c d"
+                           "e e";
+                                                
+     grid-gap: 0;  
+  
+   }
+   .grid >.five{
+     min-width: 700px;
+   }
+   .grid > div{
+     min-width: 0;
+     padding-left: 20px;
+     margin: 0; 
+     text-align: left;
+     
+   }
+   
+     #footer .flex{
+     display: flex;
+     flex-direction: row;
+     margin-left: 15%;
+   }  
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   .flex{
+       display: flex;
+       align-items: center;
+       text-align: center;
+   }
+   #nav div{
+      flex-basis: 7%;
+   }
+   
+   .gap{
+     flex-grow: 1;
+   }
+   .grid{
+     display: grid;
+     margin: 1% auto 0;
+     width: 75%;
+     grid-template-columns: 20%;
+     justify-content: justify;
+     grid-template-areas: "a b c d e";                    
+     grid-gap: auto;  
+   }
+   
+   .grid > div{
+     min-width: 0;
+     width: 90%;
+     padding-left: 10%;
+     margin-left: 40px; 
+     max-width: 350px;
+     text-align: left;
+   }
+   .grid >.five{
+     min-width:0;
+   }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .flex{
+       display: flex;
+       align-items: center;
+       text-align: center;
+    }
+    #nav div{
+       flex-basis: 7%;
+    }
+    
+    .gap{
+       flex-grow: 1;
+    }
+    .grid{
+     display: grid;
+     margin: 1% auto 0;
+     width: 75%;
+     grid-template-columns: 20%;
+     justify-content: justify;
+     grid-template-areas: "a b c d e";                    
+     grid-gap: auto;  
+   }
+   
+   .grid > div{
+     min-width: 0;
+     width: 90%;
+     padding-left: 10%;
+     margin-left: 40px; 
+     max-width: 350px;
+     text-align: left;
+   }
+}
+
+
+
+/*---------------------------------------------- Media Queries End------------------------------------- */
+
+

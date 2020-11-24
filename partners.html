@@ -18,11 +18,11 @@
             <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/SB_logo_horizontal_text_compressed.png" alt="smatbot-logo">
         </div>
         <div class="gap"></div>
-        <div><a href="#">Home</a></div> 
-        <div><a href="#">Usecases</a></div> 
+        <div><a href="C:\Users\Ak\Desktop\BuildWeek\Nickel\home.html">Home</a></div> 
+        <div><a href="C:\Users\Ak\Desktop\BuildWeek\Nickel\home.html#useCase">Usecases</a></div> 
         <div><a href="#">Templates</a></div> 
         <div><a href="#">Pricing</a></div> 
-        <div><a href="#">Partners</a></div> 
+        <div><a href="C:\Users\Ak\Desktop\BuildWeek\Nickel\partners.html">Partners</a></div> 
         <div><a href="#">Login</a></div> 
         <div><button class="primaryBtn">Free Trial</button></div>
         <div><button class="whiteBtn" >Request Demo</button></div>
@@ -31,43 +31,45 @@
             <div class="partnerClassic">smatbot partners</div>
             <div class="partnerHead">partnership to cherish for life</div>
             <div class="gridPartner">
-            <div class="partnerCard">
+                <div id="partner1" class="partnerCard">
                     <div class="cardTop">
-                        <div class="cardHead">Refer</div>
+                        <div class="cardHead"><h4>Referer</h4></div>
                         <div class="cardDesignation">(Refer/Consultant/Influencer)</div>
-                    </div>    
-                    <div class="cardSubhead">Lifetime Recurring Commision On All Sales.</div>
-                    <div>
-                        <ul>
-                            <li>Monthly Payout</li>
-                            <li>Dashboard</li>
-                            <li>Earn 20% Of Your Referral's Payment.</li>
-                            <li>Bonus Payouts For Milestone Referrals</li>
-                        </ul>        
-                    </div>
-                    <div class="partnerBtn">
-                        <div><button class="primaryBtn">Get Invited</button></div>
-                    </div>
-                </div>
-                <div class="partnerCard">
-                    <div class="cardTop">
-                        <div class="cardHead">Agency</div>
-                        <div class="cardDesignation">(Digital Marketing/Web Development Agencies)</div>
-                    </div>
-                    <div class="cardSubhead">An Agency Partnership Programme Like Never Before.</div>
-                    <div>
-                        <ul>
-                            <li>Show Clear ROI To Your Customers</li>
-                            <li>Custom Features At A Discounter Price</li>
-                            <li>Advanced Reports</li>
-                            <li>White-Label Solution Available</li>
-                        </ul>        
-                    </div>
-                    <div class="partnerBtn">
-                        <div><button class="primaryBtn">Get Invited</button></div>
+                    </div> 
+                    <div class="cardBottom">
+                        <div class="cardSubhead">Lifetime Recurring Commision On All Sales.</div>
+                        <div>
+                            <ul>
+                                <li>Monthly Payout</li>
+                                <li>Dashboard</li>
+                                <li>Earn <span>20%</span> Of Your Referral's Payment.</li>
+                                <li>Bonus Payouts For Milestone Referrals</li>
+                            </ul>        
+                        </div>
+                        <div class="partnerBtn">
+                            <div><button class="primaryBtn">Get Invited</button></div>
+                        </div>
                     </div>
                 </div>
-                <div class="partnerCard">
+                <div id="partner2" class="partnerCard">
+                        <div class="cardTop">
+                            <div class="cardHead"><h4>Agency</h4></div>
+                            <div class="cardDesignation">(Digital Marketing/Web Development Agencies)</div>
+                        </div>
+                        <div class="cardSubhead">An Agency Partnership Programme Like Never Before.</div>
+                        <div>
+                            <ul>
+                                <li>Show Clear ROI To Your Customers</li>
+                                <li>Custom Features At A Discounter Price</li>
+                                <li>Advanced Reports</li>
+                                <li>White-Label Solution Available</li>
+                            </ul>        
+                        </div>
+                        <div class="partnerBtn">
+                            <div><button class="primaryBtn"><h4>Get Started</h4></button></div>
+                    </div>
+                </div>
+                <div id="partner3" class="partnerCard">
                     <div class="cardTop">
                         <div class="cardHead">Reseller</div>
                         <div class="cardDesignation">(Resellers/Channel Partners)</div>
@@ -82,14 +84,75 @@
                         </ul>        
                     </div>
                     <div class="partnerBtn">
-                        <div><button class="primaryBtn">Get Invited</button></div>
+                        <div><button class="primaryBtn">Get Proposal</button></div>
                     </div>
                 </div>
             </div>
          </div>   
            
                
-    
+        <div id="contact">
+            <div class="partnerHead">Contact Us</div>
+            <div class="form">
+                <div>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div>
+                    <select name="flag" id="countrySelect">
+                        <option value="ind">IND +91</option>
+                        <option value="irn">IRN +98</option>
+                        <option value="hk">HKG +852</option>
+                        <option value="isr">ISR +972</option>
+                        <option value="ind">IND +91</option>
+                        <option value="aus">AUS +61</option>
+                        <option value="lib">LIB +231</option>
+                        <option value="jap">JAP +81</option>
+                        <option value="usa">USA +1</option>
+                    </select>
+                    <input type="number" placeholder="Phone Number">
+                </div>
+                
+                <div>
+                    <select name="" id="">
+                        <option >You are a</option>
+                        <option >Referer</option>
+                        <option >Agency</option>
+                        <option >Reseller</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="" id="">
+                        <option >How did you hear about us</option>
+                        <option >Word of mouth</option>
+                        <option >Google</option>
+                        <option >Facebook</option>
+                        <option >Linkedin</option>
+                        <option >Twitter</option>
+                        <option >Through a friend</option>
+                        <option >Whatsapp</option>
+                        <option >Others</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="message" placeholder="Message">
+                </div>
+                <div>
+                    <select name="" id="">
+                        <option >Select Deployment Process</option>
+                        <option >On-premise</option>
+                        <option >Cloud</option>
+                        <option >Others</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="message" placeholder="Company">
+                </div>
+            </div>
+            <div class="contactBtn"><button class="primaryBtn">Submit</button></div>
+        </div>
    
     
     
