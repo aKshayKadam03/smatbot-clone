@@ -397,7 +397,6 @@ button {
     }
     
     #sectionHeader > .flex > div{
-      border: 1px solid black;
       flex-basis: 100%;
       margin-top: 5%;
       text-align: left;
@@ -445,7 +444,7 @@ button {
     
     #sectionHeader .headerForm{
       margin-top: 20px;
-      border: 1px solid black;
+       
       height: 40px;
       background-color: white;
       width: 364px;
@@ -475,10 +474,15 @@ button {
       right: 0;
       height: 40px;
       width: 100px;
-      font-size: 22px;
       background-color: orange;
       border-radius: 25px;
     }
+    
+    #sectionHeader .headerBtn > h3{
+      padding-top: 5px;
+      font-size: 20px;
+    }
+   
     
     
     
