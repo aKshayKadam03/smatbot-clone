@@ -37,11 +37,14 @@ html {
     background-image: linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
     color: white;
  }
-.primaryBtn:hover{
+.primaryBtn:hover {
     background-image: linear-gradient(to right, white 0%, white 100%);
     color: black;
     border : 2px solid #8252FA;
 }
+.primaryBtn:active {
+  border : 2px solid #8252FA;
+} 
  
  /*---------------------------------------------- Navigation Start ------------------------------------- */
  #nav{
@@ -54,8 +57,7 @@ html {
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 9;
-   
+    z-index: 99999999;
  }
  
  #nav a{
@@ -100,10 +102,8 @@ html {
  /*---------------------------------------------- Middle content starts ------------------------------------- */
  #container{
   width: 100%;
-  margin: auto;
+  margin:   auto ;
 }
- 
- 
  .filmcity img {
   width:200px;
   height:90px;
@@ -120,26 +120,33 @@ html {
   height:140px;
 }
 
+#container{
+  width: 100%;
+  background-image: url(https://s3.ap-south-1.amazonaws.com/custpostimages/ss_images/pricing-bg.png);
+ height: 800px;
+}
+
 #clientele {
-  margin-left: 24%;
-  margin-top: 70px;
+  width: 55%;
+  margin: auto; 
+  background-color:red;
 }
 
 #clientele div {
   width:250px;
-  height:350px;
+  height:300px;
   float:left;
-  background-color: white;
   margin:30px 30px;
   padding:10px;
+  background-color: white;
 }
 
-.clientele {
-  font-style: "Rajdhani", sans-serif;
+.clientele-head {
+  font-family: 'Rajdhani', sans-serif;
   font-weight:600;
   font-size: 36px;
-  margin:10px auto;
-  text-align: center;
+  margin: 30px auto;
+   text-align: center;
 }
 
 button {
@@ -169,16 +176,27 @@ button {
 }
 
 .trial {
-  width:100px;
-  height:40px;
-/* margin:10px auto; */
-   margin-left: 45%;
+  width: 10%;
+  padding-top: 200px;
+  margin: 50px auto;
 }
 
 .clear {
   clear:both;
 }
 
+#chatbot .chatbot-title{
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 15px;
+}
+
+#chatbot .chatbot-para{
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  margin: 15px;
+}
 #chatbot{
   width: 80%;
   margin: auto;
@@ -195,50 +213,83 @@ button {
 
 .chatbot-head {
   text-align: center;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 2px;
+   
 }
 
 .chatbot-color {
   color:#777;
-  font-size:12px;
+  font-size:14px;
   margin-top: 200px;
   margin-bottom:20px;
 }
 
 .chatbot-text {
-  font-size:36px;
+  font-size:34px;
   font-weight: 600;
+  text-transform: capitalize;
+  width: 80%;
+  margin: auto;
 }
 
 
-.smat {
-  float:left;
-  height:150px;
-  width:100px;
-  margin:20px;
-  padding:30px;
-  font-size: 19px;
-  background-color: aliceblue;
-}
-
-.smat > img {
-  width:80px;
-  height:80px;
-}
-
-.smatbot {
-  margin-left: 26%;
-}
-
+/* --------------------------------------------------------------smatBot Start------------------------------------------------------------------- */
 .smattop {
   font-size: 36px;
   margin:100px 0px 50px 0px;
   text-align:center;
+  font-weight: 600;
   font-family: "Rajdhani",sans-serif;
 }
 
+.smatbot {
+   width: 80%;
+   margin: auto;
+   text-align: center;
+}
+
+.smat{
+  float:left;
+  width: 24%;
+  font-size: 19px;
+  border-radius: 25px;
+}
+
+.smat:hover{
+   
+  box-shadow: 0.5px 0.5px 30px  rgb(235, 231, 231);
+}
+
+.smat-img{
+  width: 100%;
+  height: 150px;
+}
+
+.smat > img {
+   width: 100%;
+   height: 100%;
+}
+
+.smat > :nth-child(2){
+  width: 70%;
+  margin: auto;
+}
+.smat > :nth-child(2) p{
+  color: #2F3538;
+   font-family: 'Rubik', sans-serif;
+   margin-top: 20px;
+   text-align: center;
+}
+
+
+
+/* --------------------------------------------------------------smatBot End------------------------------------------------------------------- */
+
 #blog{
   width: 80%;
-  margin: auto;
+  margin: 0 auto 80px;
 }
 
 .blog-size{
@@ -310,6 +361,7 @@ button {
     width: 100%;
     border: 1px #D3D3D3 solid;
     text-align: center;
+   
   }
   .footLogo img{
     height: 60px;
@@ -321,7 +373,10 @@ button {
     text-align: left;
     font-size: 18px;
     color: #2196F3;
+   
   }
+  
+  
   
   .footerHead{
     font-size: 18px;
@@ -389,10 +444,13 @@ button {
       background-repeat: no-repeat;
       background-size: auto;
       height: 760px;
+      margin-top: -20px; 
     }
     
     #sectionHeader > .flex >.sectionHeaderOne{
-      margin-top: -50px;
+     
+      width: 100%;
+      height: 100%;
     }
     
     #sectionHeader > .flex{
@@ -494,6 +552,13 @@ button {
       font-size: 20px;
     }
    
+   #sectionHeader > .flex > .sectionHeaderTwo{
+    width: 100%;
+   }
+   #sectionHeader > .flex > .sectionHeaderTwo img{
+    width: 100%;
+    height: 100%;
+   }
     
     
     
@@ -503,14 +568,246 @@ button {
     /*---------------------------------------------- SectionHeader End ------------------------------------- */
  
  
+  /*---------------------------------------------- sectionStats Start ------------------------------------- */
+ 
+ #sectionStats{
+    width: 100%;
+    margin:  auto;  
+ }
+ 
+ #sectionStats > .stats{
+    width: 70%;
+    margin: auto; 
+    box-shadow: 1px 1px 40px rgb(200, 200, 200);
+     
+ }
+  
+ #sectionStats > .stats > div{
+    flex-basis: 33.33%;
+   
+  }
+  
+  #sectionStats > .stats > div > h2{
+    margin: 5%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #666666;
+  }
+  #sectionStats > .stats > div > p{
+    margin: 5%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666666;
+  }
  
  
  
  
+  /*---------------------------------------------- sectionStats End ------------------------------------- */
  
  
  
  
+ /* --------------------------------------------------Usecases start ---------------------------------------- */
+
+ #useCase {
+  width: 70%;
+  margin: 100px auto;
+  
+}
+.main_title {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.main_title .top_title {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+ 
+.big-float-left {
+  float: left;
+  width: 40%;
+  align-items: center;
+}
+.big-float-right{
+  float: right;
+  width: 40%;
+  align-items: center;
+}
+ 
+.clear_float {
+  clear: both;
+}
+#useCase .usecase-content{
+  margin-top: 100px;
+}
+
+#useCase .line{
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #787878;
+}
+
+#useCase .seperator{
+  margin: 10px 0 15px;
+  width: 50px;
+  height: 1px;
+  background-image: linear-gradient(90deg, rgb(130, 82, 250) 0%, rgb(236, 162, 241) 100%);
+}
+
+#useCase .usecase-subheading{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #222;
+}
+
+#useCase .text-black{
+  margin: 10px 0 15px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+#useCase #integration{
+  padding-top: 150px;
+}
+#useCase .integration-content{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+  color: #777;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 76%;
+  margin: 20px auto;
+}
+#useCase a{
+   text-decoration: none;
+   color: #2196F3;   
+}
+#useCase a:hover{
+  text-decoration: none;
+  color:rgb(6, 163, 98);
+}
+#useCase .integration-image{
+  width: 60%;
+  margin: auto;
+}
+#useCase #integrate{
+  width: 80%;
+  margin: auto;
+}
+
+#useCase .main-content{
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+  color: #777;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 76%;
+  margin: 20px auto 0;
+}
+#useCase .normie{
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+}
+/* ---------------------------------------------Usecases end ---------------------------------------------- */
+ 
+ 
+ /* ---------------------------------------------callToAction Start ----------------------------------------- */
+ 
+ #callToAction{
+    background-image: url(https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/impress-bg_compressed.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 500px; 
+ }
+ 
+ #callToAction .sectionCallOne{
+  width: 24%;
+  margin: auto; 
+  padding-top: 250px;
+  color: white;
+ }
+   
+ #callToAction  h3{
+  font-size: 30px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+ 
+
+#callToAction .callForm{
+  margin: auto; 
+  height: 50px;
+  background-color: white;
+  width: 420px;
+  display: inline-block;
+  border-radius: 25px;
+  position: relative;
+  border: solid 1px #E5935A;
+}
+
+#callToAction #countrySelect{
+  outline: none;
+  border: none;
+  margin:0;
+  width: 90px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+#callToAction input{
+  outline: none;
+  border: none;
+  height: 40px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+#callToAction .headerBtn{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 120px;
+  background-image: linear-gradient(to right, #dd3f17 0%, #998165 100%), radial-gradient(circle at top left, #d67316, #dac9b6);
+  border-radius: 25px;
+}
+
+#callToAction .headerBtn > h3{
+  padding-top: 10px;
+  font-size: 20px;
+   
+}
+
+#callToAction > .selectCallOne{
+  border: 1px solid black;
+}
+
+ 
+
+
+
+
+ 
+  /* ---------------------------------------------callToAction End ----------------------------------------- */
  
  
   /*---------------------------------------------- Media Queries Start ------------------------------------- */
