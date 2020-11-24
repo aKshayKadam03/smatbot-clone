@@ -24,6 +24,7 @@
       var top = document.querySelectorAll(".cardTop")
          for( var i = 0; i < top.length; i++){
             top[0].style.backgroundImage = "linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1)";
+            top[0].style.color = "white"
          }
       var bottom = document.querySelectorAll(".partnerBtn")
          for( var i = 0; i < top.length; i++){
@@ -42,6 +43,7 @@
       var top = document.querySelectorAll(".cardTop")
       for( var i = 0; i < top.length; i++){
          top[0].style.backgroundImage = "linear-gradient(to right, #fff 0%, #fff 100%), radial-gradient(circle at top left, #fff, #fff)"; 
+         top[0].style.color = "black"
       }
       var bottom = document.querySelectorAll(".partnerBtn")
       for( var i = 0; i < top.length; i++){
@@ -53,10 +55,12 @@
       var top = document.querySelectorAll(".cardTop")
          for( var i = 0; i < top.length; i++){
             top[1].style.backgroundImage = "linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1)";
+            top[1].style.color = "white"
          }
       var bottom = document.querySelectorAll(".partnerBtn")
          for( var i = 0; i < top.length; i++){
             bottom[1].style.backgroundImage = "linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1)";
+            
          }
       
       var btn = document.querySelectorAll(".primaryBtn")
@@ -71,10 +75,12 @@
       var top = document.querySelectorAll(".cardTop")
       for( var i = 0; i < top.length; i++){
          top[1].style.backgroundImage = "linear-gradient(to right, #fff 0%, #fff 100%), radial-gradient(circle at top left, #fff, #fff)"; 
+         top[1].style.color = "black" 
       }
       var bottom = document.querySelectorAll(".partnerBtn")
       for( var i = 0; i < top.length; i++){
          bottom[1].style.backgroundImage = "linear-gradient(to right, #fff 0%, #fff 100%), radial-gradient(circle at top left, #fff, #fff)"; 
+         
       }
    }
    
@@ -83,16 +89,17 @@
       var top = document.querySelectorAll(".cardTop")
          for( var i = 0; i < top.length; i++){
             top[2].style.backgroundImage = "linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1)";
+            top[2].style.color = "white"
          }
       var bottom = document.querySelectorAll(".partnerBtn")
          for( var i = 0; i < top.length; i++){
             bottom[2].style.backgroundImage = "linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1)";
+            
          }
       
       var btn = document.querySelectorAll(".primaryBtn")
          for( var i = 0; i < btn.length; i++){
             btn[2].style.border = none;
-           
          }
        
    }
@@ -101,6 +108,7 @@
       var top = document.querySelectorAll(".cardTop")
       for( var i = 0; i < top.length; i++){
          top[2].style.backgroundImage = "linear-gradient(to right, #fff 0%, #fff 100%), radial-gradient(circle at top left, #fff, #fff)"; 
+         top[2].style.color = "black"
       }
       var bottom = document.querySelectorAll(".partnerBtn")
       for( var i = 0; i < top.length; i++){
