@@ -504,8 +504,48 @@ button {
  
  
  
- 
- 
+ /* --------------------------------------------------Usecases start ---------------------------------------- */
+
+ #items {
+  align-items: center;
+}
+.main_title {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.main_title .top_title {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.row_features_content{
+  margin: auto;
+}
+.big_f_left {
+  float: left;
+  width: 50%;
+}
+.big_f_right {
+  float: right;
+  width: 50%;
+  margin-top: 100px;
+}
+.big_f_left1 {
+  float: left;
+  width: 50%;
+}
+.big_f_right1 {
+  float: right;
+  width: 50%;
+
+}
+.clear_float {
+clear: both;
+}
+
+
+/* ---------------------------------------------Usecases end ---------------------------------------------- */
  
  
  
@@ -516,6 +556,7 @@ button {
   /*---------------------------------------------- Media Queries Start ------------------------------------- */
  
  
+  
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
       .flex{
