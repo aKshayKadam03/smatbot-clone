@@ -388,7 +388,11 @@ button {
       background-image: url(https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/home-banner_compressed.png);
       background-repeat: no-repeat;
       background-size: auto;
-      height: 730px;
+      height: 760px;
+    }
+    
+    #sectionHeader > .flex >.sectionHeaderOne{
+      margin-top: -50px;
     }
     
     #sectionHeader > .flex{
@@ -397,7 +401,6 @@ button {
     }
     
     #sectionHeader > .flex > div{
-      border: 1px solid black;
       flex-basis: 100%;
       margin-top: 5%;
       text-align: left;
@@ -438,33 +441,39 @@ button {
     }
     
     #sectionHeader .flex > i{
-      font-size: 40px;
+      font-size: 70px;
       font-weight: bold;
-      margin-left: 10px;
+      margin-left: 15px;
     }
     
     #sectionHeader .headerForm{
       margin-top: 20px;
-      border: 1px solid black;
-      height: 40px;
+      height: 50px;
       background-color: white;
-      width: 364px;
+      width: 420px;
       display: inline-block;
       border-radius: 25px;
       position: relative;
+      border: solid 1px #E5935A;
     }
     
     #sectionHeader #countrySelect{
       outline: none;
       border: none;
       margin: 0;
-      height: 40px;
+      width: 90px;
+      height: 50px;
       border-radius: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
     }
     #sectionHeader input{
       outline: none;
       border: none;
       height: 40px;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
     }
     
     
@@ -473,12 +482,18 @@ button {
       position: absolute;
       top: 0;
       right: 0;
-      height: 40px;
-      width: 100px;
-      font-size: 22px;
-      background-color: orange;
+      height: 50px;
+      padding-left: 20px;
+      width: 120px;
+      background-image: linear-gradient(to right, #dd3f17 0%, #998165 100%), radial-gradient(circle at top left, #d67316, #dac9b6);
       border-radius: 25px;
     }
+    
+    #sectionHeader .headerBtn > h3{
+      padding-top: 10px;
+      font-size: 20px;
+    }
+   
     
     
     
