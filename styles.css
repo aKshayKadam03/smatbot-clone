@@ -103,10 +103,7 @@ html {
  
  
  /*---------------------------------------------- Middle content starts ------------------------------------- */
- #container{
-  width: 100%;
-  margin:   auto ;
-}
+ 
  .filmcity img {
   width:200px;
   height:90px;
@@ -126,18 +123,18 @@ html {
 #container{
   width: 100%;
   background-image: url(https://s3.ap-south-1.amazonaws.com/custpostimages/ss_images/pricing-bg.png);
- height: 800px;
+  height: 800px;
+  margin: auto;
 }
 
 #clientele {
-  width: 55%;
+  width: 80%;
   margin: auto; 
   background-color:red;
 }
 
 #clientele div {
-  width:250px;
-  height:300px;
+  width: 25%;
   float:left;
   margin:30px 30px;
   padding:10px;
@@ -189,6 +186,7 @@ button {
   font-weight: 400;
   font-size: 20px;
   margin: 15px;
+   
 }
 
 #chatbot .chatbot-para{
@@ -199,15 +197,22 @@ button {
 #chatbot{
   width: 80%;
   margin: auto;
+  min-width: 500px;
 }
 
 .chatbot {
   display:flex;
   margin-left: 14%;
+
+}
+#chatbot .chatbot > div > div {
+  min-width: 400px;
+  
 }
 
 .chatbot img {
   float:left;
+   
 }
 
 .chatbot-head {
@@ -247,6 +252,7 @@ button {
    width: 80%;
    margin: auto;
    text-align: center;
+   min-width: 500px;
 }
 
 .smat{
@@ -255,6 +261,7 @@ button {
   font-size: 19px;
   border-radius: 25px;
   padding: 50px 0;
+  min-width: 200px;
 }
 
 .smat:hover{
@@ -288,24 +295,44 @@ button {
 /* --------------------------------------------------------------smatBot End------------------------------------------------------------------- */
 
 #blog{
-  width: 80%;
+  width: 90%;
   margin: 0 auto 80px;
 }
 
 .blog-size{
-  font-size:20px;
+  font-family: 'Rubik', sans-serif;
+  font-size:18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  width: 100%;
   text-align: center;
+  margin: 15px auto;
+}
+.blog-content{
+  font-size: 12px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  margin: 15px auto;
+   
 }
 
-.blogs {
-  color: #777;
-  font-size: 16px;
-  text-align: center;
-}
+ #blog .singleBlog{
+    min-width: 500px;
+ } 
 
 .blog-float{
   float:left;
-  margin:15px;
+  margin: 1%;
+  width: 28%;
+}
+#blog .blogImage{
+  width: 100%;
+}
+#blog img{
+  width: 100%;
 }
 
 #blogs{
@@ -493,8 +520,11 @@ button {
  #useCase {
   width: 70%;
   margin: 100px auto;
-  
+  min-width: 500px;
 }
+
+
+
 .main_title {
   text-align: center;
   margin-bottom: 75px;
@@ -510,11 +540,13 @@ button {
   float: left;
   width: 40%;
   align-items: center;
+   
 }
 .big-float-right{
   float: right;
   width: 40%;
   align-items: center;
+  
 }
  
 .clear_float {
@@ -554,6 +586,7 @@ button {
 
 #useCase #integration{
   padding-top: 150px;
+  min-width: 400px;
 }
 #useCase .integration-content{
   margin-top: 20px;
@@ -607,6 +640,7 @@ button {
     background-repeat: no-repeat;
     background-size: auto;
     height: 500px; 
+    min-width: 500px;
  }
  
  #callToAction .sectionCallOne{
@@ -614,6 +648,7 @@ button {
   margin: auto; 
   padding-top: 250px;
   color: white;
+  min-width: 500px;
  }
    
  #callToAction  h3{
@@ -679,23 +714,69 @@ button {
   border: 1px solid black;
 }
 
-/* feedback and smatagent css starts */
+/* ------------------------------------- feedback and smatagent css starts  -------------------------------------*/
 
-
-.review i.fa {
+#feedBack{
+  background: url(https://s3.ap-south-1.amazonaws.com/custpostimages/ss_images/pricing-bg.png);
+  height: 90vh;
+  width: 100%;
+  margin-left: -200px; 
+  padding :0 20%;
+}
+.review i {
   color:#ffc000;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 .feedback-color {
-  color:#777;
-  font-size: 12px;
-  margin:20px;
+   color:#777;
+   font-size: 12px;
+   margin: 50px 0 0;
+   text-transform: none;
+   font-weight: 200;
+   font-family: 'Rubik', sans-serif;
+}
+
+#feedBack a{
+  color: rgb(24, 140, 236);
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+}
+
+.feedback-image{
+  height: 110px;
+  width: 110px;
+  margin: 40px auto 15px;
 }
 .feedback-image img {
-  margin-top: 40px;
+  border-radius: 100%;
+  height: 100%;
 }
-.color {
+
+#feedBack > .chatbot-head p{
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+#feedBack h4 {
+  margin: 10px 0 22px ;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
   color:#777;
+  text-transform: capitalize;
 }
+
+#smatAgent{
+  min-width: 500px;
+  width: 80%;
+  margin: auto;
+   
+}
+
 .smatagent-size {
   font-size: 16px;
 }
@@ -707,7 +788,16 @@ button {
 .smatagent {
   font-size:22px;
 }
-/* feedback and smatagent css ends */
+
+#smatAgent .smatBtn{
+  width: 10%;
+  margin: 20px auto 0;
+}
+#smatAgent button{
+  text-align: center;
+}
+
+/*  ------------------------------------- feedback and smatagent css ends  ------------------------------------- */
   /*---------------------------------------------- Footer Start ------------------------------------- */
   #footer{
     width: 100%;
@@ -863,7 +953,6 @@ button {
       }
       .grid > div{
         min-width: 500px;
-        border: 1px solid black;
         text-align: center;
         padding: 0;
         margin: 0; 
@@ -876,9 +965,49 @@ button {
     
       #sectionHeader{
         margin-top: 290px;
+        padding-top: 40px;
        
       }
+      .blog-float{
+        min-width: 400px;
+      }
+      #feedBack{
+        margin-left: 0px; 
+        max-width: 300px;
+      }
+      #useCase .integration-image{
+        width: 100%;
+        margin-left: -70px;
+      }
       
+      #useCase  img{
+       display: none;
+      }
+      
+      #useCase > div > div{
+        width: 450px;
+      }
+     
+     .sectionHeaderTwo img{
+      display: none;
+     }
+     #sectionStats{
+      margin-bottom: 60px; 
+    }
+    #sectionStats > .stats{
+      padding: 50px 0;
+    }
+    #clientele div {
+      width: 25%;
+      min-width: 300px; 
+      float:left;
+      margin:30px 30px;
+      padding:10px;
+      background-color: white;
+    }
+    #chatbot .image > img{
+      display: none;
+    }
   }  
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -950,6 +1079,10 @@ button {
         flex-direction: row;
         margin-left: 15%;
       }  
+      
+      .blog-float{
+        min-width: 700px;
+      }
   }
 
   
@@ -1033,7 +1166,23 @@ button {
         padding-top: 200px;
         margin: 50px auto;
       }
-  }
+      
+            
+    #blog .blog-float{
+        min-width:  300px;
+      }
+    #useCase .integration-image{
+      width: 60%;
+      margin: auto;
+    }
+    #clientele div {
+      width: 25%;
+      float:left;
+      margin:30px 30px;
+      padding:10px;
+      background-color: white;
+    }
+}
   
   
    
