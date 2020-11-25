@@ -3,36 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login | SmatBot</title>
+    <title>SmatBot | AI Chatbot for all your business needs</title>
+    <link rel = "icon" href = "https://custpostimages.s3.ap-south-1.amazonaws.com/11/favicon.png" type = "image/x-icon"> 
+    <!-- --------------------fonts------------------------>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Rajdhani:wght@400;500&family=Rubik&display=swap" rel="stylesheet">
+    <!-- --------------------fontsAwesome Icons------------------------>
+    <script src="https://kit.fontawesome.com/249783f98b.js" crossorigin="anonymous"></script>
+    <!-- --------------------styles------------------------>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div>
-        <a class="left" ng-click="gotoTop()"><img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/SB_logo_horizontal_text.png" width="169px" height="50px"></a>
-        <li class="right"><a href="/signup">FREE TRAIL</a></li>
-    </div>
-    <div class="row">
-        <form class="container">
-            <div class="items"> 
-                <div class="item">
-                    <input type="email" id="email" placeholder="Your Business Email" name="email">
-                </div>
-                <div class="item">
-                    <input type="password" id="password" placeholder="Password" name="password">
-                </div>
-                <i class="" id="password-icon" ng-click="changePasswordType()" role="button"></i>
-                <div class="reCaptcha">
-                </div>
-                <div class="signup">
-                    <span>Sign In</span>
-                </div>
-              </div>
-              <label class="forgot-pwd" role="button" tabindex="0">Forgot password ?</label>
-              <div >
-                <label class="signup-text">Don’t have an account ? <a class="signup-a" ng-click="gotoTop()" href="/signup">Sign Up</a> </label>
-              </div>
+    <div id="nav" class="flex">
+        <div>
+            <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/SB_logo_horizontal_text_compressed.png" alt="smatbot-logo">
+        </div>
+        <div class="gap"></div> 
+        <div><button class="primaryBtn">Free Trial</button></div>
+    </div> 
+    <div id="login">
+        <form>
+            <div><input type="text" placeholder="Your Business Email"></div>
+            <div id="inp">
+                <input type="password" placeholder="Password" class="pass" id="pa" >
+                <i id="eye" class="fas fa-eye"></i>
             </div>
+            <button class="primaryBtn">Sign in</button>
+            <button id="forgot">Forgot Password?</button>
+            <div class="sign">Dont have an account? <a href="#freetrail">Sign Up</a></div>
         </form>
     </div>
+    
+    <script type="text/javascript">
+        var eye = document.getElementById("eye")
+        var pass = document.getElementById("pa")
+        eye.addEventListener("click",function(){
+            if(pass.type === "password"){
+                pass.type = "text"
+            }
+            else{
+                pass.type = "password"
+            }
+        })
+    // ----------------password visibility end-----------------    
+        var forgot = document.getElementById("forgot")
+        forgot.addEventListener("click",function(){
+            var modal = document.createElement("div")
+            modal.setAttribute("id","modal")
+            
+            var parent = document.querySelector("body")
+            parent.appendChild(modal)  
+            
+            modalHeader();
+        })
+        
+        function modalHeader(){
+            var header = document.createElement("div")
+            header.setAttribute("class","modalHead")
+            modal.appendChild(header)
+            
+            var heading = document.createElement("div")
+            heading.innerHTML = "<h1>Forgot Password?</h1>"
+            header.appendChild(heading)
+             
+            var email = document.createElement("div")
+            email.setAttribute("class","modalEmail")
+            modal.appendChild(email)
+            
+            
+            var emailInput = document.createElement("input")
+            emailInput.type = "email"
+            emailInput.placeholder = "Enter your email" 
+            email.appendChild(emailInput) 
+             
+            var reset = document.createElement("div")
+            reset.setAttribute("class","modalButton")
+            modal.appendChild(reset)
+            
+            var btn = document.createElement("button")
+            btn.textContent = "Reset Password"
+            btn.setAttribute("class","primaryBtn")
+            reset.appendChild(btn)
+            
+            
+        }
+           
+        
+ 
+        
+    
+    </script>
+    
 </body>
 </html>

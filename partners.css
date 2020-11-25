@@ -84,9 +84,8 @@ button{
 }
 
 #nav div{
-   flex-basis: 7%;
-   margin: 5px;
-  
+  flex-basis: 7%;
+  margin: 2px 5px;
 }
 
 .gap{
@@ -240,7 +239,14 @@ button{
    outline: none;
    font-size: 16px;
    font-family: 'Lato', sans-serif;
- }
+   width: 70%;
+}
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
  #contact > .form > div > select{
    border: none;
    outline: none;
@@ -407,196 +413,187 @@ button{
  
  
  
- 
- 
- 
-  /*---------------------------------------------- Media Queries Start ------------------------------------- */
+   /*---------------------------------------------- Media Queries Start ------------------------------------- */
  
  
   
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
-   .flex{
-       display: block;
-       min-width: 500px;
-   }
+    .flex{
+        display: block;
+        min-width: 500px;
+    }
+    
+    
+    .grid{
+      min-width: 500px;
+      grid-template-columns: 100%;
+      justify-content: justify;
+      grid-template-areas: "a"
+                            "b"
+                            "c"
+                            "d"
+                            "e";                    
+      grid-gap: auto;  
    
-   
-   .grid{
-     min-width: 500px;
-     grid-template-columns: 100%;
-     justify-content: justify;
-     grid-template-areas: "a"
-                           "b"
-                           "c"
-                           "d"
-                           "e";                    
-     grid-gap: auto;  
+    }
+    .grid > div{
+      min-width: 500px;
+      border: 1px solid black;
+      text-align: center;
+      padding: 0;
+      margin: 0; 
+    }
+    #footer .flex{
+      display: flex;
+      flex-direction: row;
+      margin-left: 15%;
+    }
   
-   }
-   .grid > div{
-     min-width: 500px;
-     border: 1px solid black;
-     text-align: center;
-     padding: 0;
-     margin: 0; 
-   }
-   #footer .flex{
-     display: flex;
-     flex-direction: row;
-     margin-left: 15%;
-   }
- 
- 
-   
+  
+    
 }  
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-   .flex{
-       display: flex;
-       align-items: center;
-       text-align: center;
-   }
+    .flex{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .grid{
+      min-width: 600px;
+      grid-template-columns: 100%;
+      justify-content: justify;
+      grid-template-areas: "a"
+                            "b"
+                            "c"
+                            "d"
+                            "e";                    
+      grid-gap: auto;  
    
-   .grid{
-     min-width: 600px;
-     grid-template-columns: 100%;
-     justify-content: justify;
-     grid-template-areas: "a"
-                           "b"
-                           "c"
-                           "d"
-                           "e";                    
-     grid-gap: auto;  
-  
-   }
-   .grid > div{
-     min-width: 600px;
-     text-align: center;
-     padding: 0;
-     margin: 0; 
-   }
-     #footer .flex{
-     display: flex;
-     flex-direction: row;
-     margin-left: 15%;
-   }  
+    }
+    .grid > div{
+      min-width: 600px;
+      text-align: center;
+      padding: 0;
+      margin: 0; 
+    }
+      #footer .flex{
+      display: flex;
+      flex-direction: row;
+      margin-left: 15%;
+    }  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-   
     
-   .flex{
-       display: flex;
-       align-items: center;
-       text-align: center;
-   }
-   .grid{
-     min-width: 700px;
-     grid-template-columns: 50%;
-     justify-content: justify;
-     grid-template-areas: "a b"
-                           "c d"
-                           "e e";
-                                                
-     grid-gap: 0;  
-  
-   }
-   .grid >.five{
-     min-width: 700px;
-   }
-   .grid > div{
-     min-width: 0;
-     padding-left: 20px;
-     margin: 0; 
-     text-align: left;
      
-   }
+    .flex{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .grid{
+      min-width: 700px;
+      grid-template-columns: 50%;
+      justify-content: justify;
+      grid-template-areas: "a b"
+                            "c d"
+                            "e e";
+                                                 
+      grid-gap: 0;  
    
-     #footer .flex{
-     display: flex;
-     flex-direction: row;
-     margin-left: 15%;
-   }  
+    }
+    .grid >.five{
+      min-width: 700px;
+    }
+    .grid > div{
+      min-width: 0;
+      padding-left: 20px;
+      margin: 0; 
+      text-align: left;
+      
+    }
+    
+      #footer .flex{
+      display: flex;
+      flex-direction: row;
+      margin-left: 15%;
+    }  
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-   .flex{
-       display: flex;
-       align-items: center;
-       text-align: center;
-   }
-   #nav div{
-      flex-basis: 7%;
-   }
-   
-   .gap{
-     flex-grow: 1;
-   }
-   .grid{
-     display: grid;
-     margin: 1% auto 0;
-     width: 75%;
-     grid-template-columns: 20%;
-     justify-content: justify;
-     grid-template-areas: "a b c d e";                    
-     grid-gap: auto;  
-   }
-   
-   .grid > div{
-     min-width: 0;
-     width: 90%;
-     padding-left: 10%;
-     margin-left: 40px; 
-     max-width: 350px;
-     text-align: left;
-   }
-   .grid >.five{
-     min-width:0;
-   }
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
     .flex{
-       display: flex;
-       align-items: center;
-       text-align: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
     }
     #nav div{
        flex-basis: 7%;
     }
     
     .gap{
-       flex-grow: 1;
+      flex-grow: 1;
     }
     .grid{
-     display: grid;
-     margin: 1% auto 0;
-     width: 75%;
-     grid-template-columns: 20%;
-     justify-content: justify;
-     grid-template-areas: "a b c d e";                    
-     grid-gap: auto;  
-   }
-   
-   .grid > div{
-     min-width: 0;
-     width: 90%;
-     padding-left: 10%;
-     margin-left: 40px; 
-     max-width: 350px;
-     text-align: left;
-   }
+      display: grid;
+      margin: 1% auto 0;
+      width: 75%;
+      grid-template-columns: 20%;
+      justify-content: justify;
+      grid-template-areas: "a b c d e";                    
+      grid-gap: auto;  
+    }
+    
+    .grid > div{
+      min-width: 0;
+      width: 90%;
+      padding-left: 10%;
+      margin-left: 40px; 
+      max-width: 350px;
+      text-align: left;
+    }
+    .grid >.five{
+      min-width:0;
+    }
+
 }
 
-
-
-/*---------------------------------------------- Media Queries End------------------------------------- */
-
-
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+     .flex{
+        display: flex;
+        align-items: center;
+        text-align: center;
+     }
+     #nav div{
+        flex-basis: 4.5%;
+     }
+     
+     .gap{
+        flex-grow: 1;
+     }
+     .grid{
+      display: grid;
+      margin: 1% auto 0;
+      width: 75%;
+      grid-template-columns: 20%;
+      justify-content: justify;
+      grid-template-areas: "a b c d e";                    
+      grid-gap: auto;  
+    }
+    
+    .grid > div{
+      min-width: 0;
+      width: 90%;
+      padding-left: 10%;
+      margin-left: 40px; 
+      max-width: 350px;
+      text-align: left;
+    }
+}

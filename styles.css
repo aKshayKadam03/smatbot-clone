@@ -84,8 +84,8 @@ html {
  
  #nav div{
     flex-basis: 7%;
-    margin: 5px;
-   
+    margin: 2px 5px;
+    
  }
  
  .gap{
@@ -971,7 +971,7 @@ button {
           text-align: center;
        }
        #nav div{
-          flex-basis: 7%;
+          flex-basis: 4.5%;
        }
        
        .gap{
