@@ -503,6 +503,33 @@ button {
     /*---------------------------------------------- SectionHeader End ------------------------------------- */
  
  
+
+.review i.fa {
+  color:#ffc000;
+}
+.feedback-color {
+  color:#777;
+  font-size: 12px;
+  margin:20px;
+}
+.feedback-image img {
+  margin-top: 40px;
+}
+.color {
+  color:#777;
+}
+.smatagent-size {
+  font-size: 16px;
+}
+.smatagent-image img {
+  width:50%;
+  height:400px;
+  margin: 40px 25% 40px 25%;
+}
+.smatagent {
+  font-size:22px;
+}
+
  
  
  
