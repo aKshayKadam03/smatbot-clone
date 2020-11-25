@@ -103,6 +103,7 @@ html {
     background-color:white;
     padding: 60px;
     border-radius: 8px;
+    min-width: 300px;  
 }
 #login  input{
     display: block;
@@ -244,3 +245,5 @@ html {
 }
 
  
+ 
+  

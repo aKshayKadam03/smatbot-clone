@@ -178,11 +178,7 @@ button {
   border : 2px solid #8252FA;
 }
 
-.trial {
-  width: 10%;
-  padding-top: 200px;
-  margin: 50px auto;
-}
+
 
 .clear {
   clear:both;
@@ -849,7 +845,10 @@ button {
         margin-left: 15%;
       }
     
-    
+      #sectionHeader{
+        margin-top: 290px;
+       
+      }
       
   }  
   
@@ -994,6 +993,16 @@ button {
         margin-left: 40px; 
         max-width: 350px;
         text-align: left;
+      }
+      
+      #sectionHeader{
+        margin-top: 60px;
+      }
+      
+      .trial {
+        width: 10%;
+        padding-top: 200px;
+        margin: 50px auto;
       }
   }
   
