@@ -306,7 +306,7 @@ button {
   text-transform: capitalize;
   width: 100%;
   text-align: center;
-  margin: 15px auto;
+  margin: 10px auto;
 }
 .blog-content{
   font-size: 12px;
@@ -315,7 +315,7 @@ button {
   font-family: 'Rubik', sans-serif;
   font-weight: normal;
   letter-spacing: 0.2px;
-  margin: 15px auto;
+  margin: 10px auto;
    
 }
 
