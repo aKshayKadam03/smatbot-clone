@@ -134,12 +134,14 @@ button{
    grid-template-columns: 30% 30% 30%; 
    grid-template-rows: 550px;
    grid-gap: 3%; 
+  
  }
  
  #partner > .gridPartner > div{
-    
    box-shadow: 1px 1px 10px rgb(187, 185, 185);
    border-radius: 5px;
+   min-width: 300px;
+   max-width: 400px;
  }
  
  #partner .cardTop{
@@ -262,7 +264,6 @@ button{
 #contact .contactBtn{
    width: 10%;
    margin: 0 auto 200px;
-   
 }
 
 #contact .primaryBtn{
@@ -307,6 +308,8 @@ button{
    margin-left: 40px; 
    max-width: 350px;
  }
+ 
+ 
  
  #footer > .one{
    grid-area: a;
@@ -449,6 +452,34 @@ button{
       flex-direction: row;
       margin-left: 15%;
     }
+    
+    #partner{
+      margin-top: 350px;
+    }
+    
+    #partner > .gridPartner{
+      width: 300px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 30%; 
+      grid-template-rows: 550px;
+      grid-gap: 3%; 
+     
+    }
+    
+    #contact > .form{
+      width: 70%;
+      margin: 100px auto 100px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: 35px;
+    }
+    
+    #contact .contactBtn{
+      width: 30%;
+      margin: 0 auto 200px;
+   }
+   
   
   
     
@@ -485,6 +516,32 @@ button{
       flex-direction: row;
       margin-left: 15%;
     }  
+    #partner{
+      margin-top: 350px;
+    }
+    
+    #partner > .gridPartner{
+      width: 300px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 30%; 
+      grid-template-rows: 550px;
+      grid-gap: 3%; 
+     
+    }
+    
+    #contact > .form{
+      width: 70%;
+      margin: 100px auto 100px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: 35px;
+    }
+    
+    #contact .contactBtn{
+      width: 30%;
+      margin: 0 auto 200px;
+   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -523,6 +580,15 @@ button{
       flex-direction: row;
       margin-left: 15%;
     }  
+    #partner > .gridPartner{
+      width: 100%;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 50% 50%; 
+      grid-template-rows: 550px;
+      grid-gap: 3%; 
+    
+    }
 }
 
 
@@ -565,7 +631,7 @@ button{
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width:1200px) {
      .flex{
         display: flex;
         align-items: center;
@@ -596,4 +662,31 @@ button{
       max-width: 350px;
       text-align: left;
     }
+    
+    #partner > .gridPartner{
+      width: 100%;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 30% 30% 30%; 
+      grid-template-rows: 550px;
+      grid-gap: 3%; 
+    
+    }
+    #contact > .form{
+      width: 70%;
+      margin: 100px auto 100px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 35px;
+     
+    }
+    #contact .contactBtn{
+      width: 10%;
+      margin: 0 auto 200px;
+   }
+   
+    
 }
+
+ 
+ 
