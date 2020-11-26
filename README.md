@@ -13,13 +13,5 @@
 
 <h2>Smatbot is a clone of the original smatbot website which deals with the development of AI chat bots for their costumers</h2>
 <p>This is a five page website which posses only front end build with HTML,CSS and Javascript. The layouts are mainly built with flex,grid and float </p>
-
-
-
-
-
-
-
-
 ![home](https://user-images.githubusercontent.com/39058941/100349610-ba683900-300e-11eb-8834-ed549d3ccb56.png)
-
+<center><p>Home Page</p></center>
