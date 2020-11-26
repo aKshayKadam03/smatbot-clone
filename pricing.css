@@ -113,13 +113,14 @@ html {
     width: 22%;
     margin: auto;
     display: flex;
-     
-    
   }
   #pricingTable > .switch > div{
     flex-basis: 33%;
   }
- 
+  
+  #switch1{
+    background-image: radial-gradient(circle at 77% 36%, rgb(229, 147, 90), rgb(233, 61, 136));
+  }
   
   #pricingTable > .switch > div button{
     width: 100%;
@@ -128,7 +129,9 @@ html {
     font-size: 20px;
     background-color: transparent;
     color: white;
+    outline: none;
   }
+
   
   #pricingTable > .switch > :nth-child(1) button{
     border-top-left-radius: 25px;
@@ -156,59 +159,298 @@ html {
                           "a b c d";
     grid-row: 1%;
   }
- 
- #pricingTable > .popular > .free{
   
-    grid-area: a;
+  #pricingTable > .popular > .mostPopular{
+    grid-area: e;
     color: white;
-    background: #7330D9;
+    padding: 5% 3%;
+    background: #1DC8CD;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
- }
- #pricingTable > .popular > .mostPopular{
-  grid-area: e;
-  color: white;
-  padding: 4% 3%;
-  background: #1DC8CD;
-  border-left: 2px solid #1DC8CD;
-  border-right: 2px solid #1DC8CD;
-  text-align: center;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 20px;
- } 
+   } 
  
-  
+  .popular  .tableHead{
+   
+    text-align: center;
+    padding: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    color: white;
+     
+   }
+   
+    .one1{
+    background: #7330D9;
+   }
+    .two1{
+    background: #8923BF;
+  }
+    .three1{
+    background: #B832C9;
+  }
+    .four1{
+    background: #D53DDA;
+  }
+    
+ #pricingTable   .free{
+    grid-area: a;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid #D3D3D3;
+ } 
  #pricingTable > .popular > .starter{
   grid-area: b;
-  color: white;
-  background: #8923BF;
   font-size: 20px;
+  background-color: white;
+  border: 1px solid #D3D3D3;
  } 
- 
  
  #pricingTable > .popular > .pro{
   grid-area: c;
-  color: white;
-  background: #B832C9;
-  border-left: 2px solid #1DC8CD;
-  border-right: 2px solid #1DC8CD;
+  border-left: 2px solid #1DC8CD !important;
+  border-right: 2px solid #1DC8CD !important;
+  border-bottom: 2px solid #1DC8CD !important;
+  box-shadow: 1px 28px 32px -12px rgba(82, 80, 80, 0.71);
   font-size: 20px;
+  background-color: white;
+  border: 1px solid #D3D3D3;
  } 
  #pricingTable > .popular > .enterprise{
   grid-area: d;
-  color: white;
-  background: #D53DDA;
   font-size: 20px;
- } 
-  
- .popular > .tableHead{
+  background-color: white;
   border: 1px solid #D3D3D3;
+ } 
+ 
+ #pricingTable h3{
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  padding: 10px;
+  color: #2F3538;
+  display: inline-block;
+ }
+ 
+ #pricingTable span{
+  font-family: 'Lato', sans-serif;
+  color: #48C8CD;
+  font-size: 17px;
+  font-weight: bold;
+ }
+ 
+ #pricingTable > .popular .primaryBtn{
+  width: 50px;
+  opacity: 0.8;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+ }
+ #pricingTable > .popular .tableContent > div{
+  border-bottom: 1px solid #D3D3D3;
+  padding: 15px; 
+ }
+ 
+ #pricingTable > .popular .tableContent > .noBorder{
+  border-bottom: none;
+ }
+  
+ 
+ #pricingTable > .popular > div > .tableContent > div > .lowerLine{
   text-align: center;
-  padding: 4%;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 20px;
+  font-size: 14px;
+  padding: 8px;
+  font-family: 'Lato', sans-serif;
+  color: grey;
+  display: block;
+ }
+ 
+ #pricingTable > .popular .tableContent p{
+  display: inline-block;
+  font-size: 16px;
+  /* font-family: 'Lato', sans-serif; */
+font-family: 'Montserrat', sans-serif;
+ }
+ 
+ #pricingTable > .popular i{
+  padding: 0 5px;
+ }
+ 
+   .red{
+    color: red;
+    display: inline-block;
+  }
+  .green{
+    color: green;
+    display: inline-block;
+  }
+  
+  /* ------------------------------------mid content ------------------------------------- */
+  
+  #pricing-mid{
+    margin-top: 800px;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  
+  .compare-plans label {
+    color:#1dc8cd;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+ #pricing-mid table,tr,td,th {
+    border-collapse: collapse;
+    border: 1px solid lightgrey;
+    margin-left: 5%;
+    font-size: 20px;
+    font-style: "Rajdhani" sans-serif;
+    font-family: "Rubik" sans-serif;
+  } 
+  #pricing-mid {
+      width:95%;
+      align-items: center;
+      /* margin:10px 40px; */
+  }
+   .pricing-mid th {
+    border-collapse: collapse;
+    border: 1px solid lightgrey;
+    width: 20%;
+    padding-left: 10px;
+    color: #5f5d5d;
+    height:50px;
+    /* min-height: 40px; */
+  }
+   #pricing-mid tr,td{
+      text-align: center;
+  }
+   #pricing-mid tbody th {
+      text-align: left;
+      font-weight: bold;
+  }
+.compare-plans-head {
+    font-size:36px;
+    color:#5f5d5d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#pricing-mid td {
+    font-size: 17px;
+}
+  .compare-plans {
+      color:#1dc8cd;
+      font-size: 30px;
+      line-height: 36px;
+  }
+  .green-color {
+      color: #1dc8cd;
+  }
+  .red-color {
+      color:red;
+  }
+  #pricing-mid tr td i span {
+      color:black;
+  }
+  .colspan-bold th {
+      font-weight: bold;
+      font-size: 26px;
+      padding-left: 25px;
+      background-color:rgb(236, 245, 245);
+  } 
+
+
+  button{
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: 1px solid transparent; 
+    border-radius: 5px;
+    width: 90%;
+    min-width: 145px;
+    margin-left: 10px;
  }
 
  
+
+.compare-plans-Btn {
+    font-size:14px;
+    text-align: center;
+    color:#5f5d5d; 
+}
+
+.compare-plans-margin {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width:200px;
+}
+.left-mar {
+    margin-top: 10px;
+    margin-left: 5%;
+}
+  
+  
+  /* ----------------------------------------mid content end---------------------------------------- */
+
+   /*---------------------------------------------- Accordian Start ------------------------------------- */
+   
+#accordian{
+  margin: 200px auto 0 ;
+  padding-bottom:200px ;
+}
+  
+#accordian .questions {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 30px ;
+  text-align: center;
+  color: #666666;
+  margin: 100px 0 30px;
+}
+#accordian .element {
+  display: inline-block;
+  width: 70%;
+  margin: auto;
+  padding-left: 15%;
+}
+
+#accordian > .element summary{
+  font-family: 'Rukbik', sans-serif;
+  font-weight: 600;
+  color: rgb(44, 42, 42);
+}
+ 
+
+details:focus , summary:focus{
+  outline: none;
+}
+details,summary{
+  padding: 0.2%;
+}
+ 
+
+#accordian .boxes {
+  border: 1px solid #D3D3D3 ;
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+ 
+}
+#accordian .box {
+  margin: 6px 0;
+  padding-top: 5px;
+  font-family: 'Lato', sans-serif;
+  border-top: 1px solid #FCEE95;
+  padding-left: 15px;
+  font-weight: 400;
+}
+
+  
+  
  
  
  
@@ -342,10 +584,7 @@ html {
   
   
   
-  
-  
-  
-  
+
   
   
     /*---------------------------------------------- Media Queries Start ------------------------------------- */
@@ -533,5 +772,5 @@ html {
      
  }
  
-  
-  
+}
+}

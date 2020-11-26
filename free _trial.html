@@ -36,23 +36,23 @@
             </select>
         </div>
         <div>
-            <input type="email" id="email" placeholder="email">
-            <i class="fa fa-question-circle pointer"></i>
+            <input type="email" id="email" placeholder="Email">
+            <i title="Why? If you are unable to complete your bot setup, We can call and help" class=" fa fa-question-circle pointer"></i>
         </div>
         <div>
             <input type="text" id="text" placeholder="Your website Url">
-            <i class="fa fa-question-circle pointer"></i>
+            <i title="Why? If you are unable to complete your bot setup, We can call and help" class="fa fa-question-circle pointer"></i>
         </div>
         <div>
             <input type="password" id="password" placeholder="Create a password">
-            <i class="fa fa-eye signup-password-icon"></i>
+            <i id="eye" class="fa fa-eye signup-password-icon"></i>
         </div>
             <input type="checkbox" id="termscheckbox" value="smatbot">
             <label for ="termscheckbox">I agree to all the<a href="https://www.smatbot.com/terms/"> &nbsp;Terms and Conditions</a></label>
-        <div class="signup"><button disabled id="checkBtn" class="primaryBtn">Sign Up</button></div>
+        <div class="signup"><button id="checkBtn" disabled ="disabled">Sign Up</button></div>
         <div class="login-link">Already have an account ? <a href="file:///C:/Users/Ak/Desktop/BuildWeek/Nickel/login.html" >Login</a></div>
     </div>
-
+  
     <div class="clear"></div>
 
 
@@ -96,17 +96,33 @@
     
      
     <script>
-        var check = document.getElementById("termscheckbox")
-        check.addEventListener("click",function(){
-            var btn = document.getElementById("checkBtn")
-            if(check.checked === true){
-                 btn.setAttribute("disabled","false")
+      
+    //    ---------------- pass visible----------------------------- 
+        var eye = document.getElementById("eye")
+        var pass = document.getElementById("password")
+        eye.addEventListener("click",function(){
+            if(pass.type === "password"){
+                pass.type = "text"
             }
             else{
-                btn.setAttribute("disabled","true")
+                pass.type = "password"
             }
         })
+        
+  //    ---------------- Check box | sumbit disable/enable----------------------------- 
+        var check = document.getElementById("termscheckbox")
+        var btn = document.getElementById("checkBtn")
+        check.addEventListener("click",function(){
+            if(check.checked === true){
+                btn.setAttribute("class","primaryBtn")  
+            }
+            else{
+                btn.removeAttribute("class","primaryBtn")
+            }
+        })
+        
        
+        
     
     </script>
 </body>

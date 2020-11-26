@@ -442,7 +442,6 @@ button{
     }
     .grid > div{
       min-width: 500px;
-      border: 1px solid black;
       text-align: center;
       padding: 0;
       margin: 0; 

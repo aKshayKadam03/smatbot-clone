@@ -119,6 +119,9 @@ html {
   width:200px;
   height:140px;
 }
+.singpost p, .muthoot p , .filmcity p{
+  font-family: 'Rubik', sans-serif;
+}
 
 #container{
   width: 100%;
