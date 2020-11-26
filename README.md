@@ -11,3 +11,6 @@
    <ul>
        <li>Images - <a href = "https://developer.mozilla.org/en-US/" >MDN Docs<a></li>
    <ul>
+
+<h2>Smatbot is a clone of the original smatbot website which deals with the development of AI chat bots for their costumers</h2>
+<p>This is a five page website which posses only front end build with HTML,CSS and Javascript. The layouts are mainly built with flex,grid and float </p>
