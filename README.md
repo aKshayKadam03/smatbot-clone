@@ -4,8 +4,8 @@
 <h4>sources</source>
 <ul>
   <li>Images - <a href = "smatbot.com" >Smatbot<a></li>
-  <li>Fonts - <a href = "fontawesome.com" >FontAwesome<a></li>
-  <li>Images - <a href = "https://fonts.google.com/" >Google fonts<a></li>
+  <li>Icons - <a href = "fontawesome.com" >FontAwesome<a></li>
+  <li>Fonts - <a href = "https://fonts.google.com/" >Google fonts<a></li>
 </ul>
  <h4>Reference</source>
    <ul>
