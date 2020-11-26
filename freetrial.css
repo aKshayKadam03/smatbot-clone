@@ -1,32 +1,106 @@
-.color {
-    color:#777;  
-}
+/* fonts 
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Rubik', sans-serif;
 
-#nav img {
+*/
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+ body{
+  height: 100vh;
+  position: relative;
+ }
+*{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ button{
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: 1px solid transparent; 
+    border-radius: 5px;
+    width: 90%;
+    min-width: 145px;
+    margin-left: 10px;
+ }
+ .primaryBtn{
+    background-image: linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
+    color: white;
+ }
+.primaryBtn:hover {
+    background-image: linear-gradient(to right, white 0%, white 100%);
+    color: black;
+    border : 2px solid #8252FA;
+}
+.primaryBtn:active {
+  border : 2px solid #8252FA;
+} 
+#nav .loginWhite{
+    background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%), radial-gradient(circle at top left, #ffffff, #ffffff);
+    border : 2px solid #8252FA;
+    color: black;
+}
+ /*---------------------------------------------- Navigation Start ------------------------------------- */
+ #nav{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0.2% 2.5%;
+    width: 95%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 99999999;
+    box-shadow: 1px 1px 10px rgb(218, 214, 214);
+ }
+ 
+ #nav a{
+    text-decoration: none;
+    color: #000;
+ }
+ #nav a:active, #nav a:hover{
+    text-decoration: none;
+    color: #8252fa;
+ }
+ 
+ .flex{
+    display: flex;
+    align-items: center;
+    text-align: center;
+ }
+ 
+ #nav  img{
     height: 50px;
     margin-left: 15px;
-}
-#nav div {
+ }
+ 
+ #nav div{
     flex-basis: 7%;
-    margin:5px;
-}
+    margin: 2px 5px;
+    
+ }
+ 
+ .gap{
+    flex-grow: 1;
+ }
+ 
+ 
 
-.login-link {
-    color:black;
-    font-size: 20px;
-    margin-left: 20%;
-}
-
-.loginBtn button {
-    width:150px;
-    margin-left: 1100px;
-    font-size: 17px;
-    border:1px solid #8252fa;
-}
-.loginBtn {
-    display:flex;
-}
-
+  
+ /*---------------------------------------------- Navigation End ------------------------------------- */
+ 
 .leftside {
     margin-top: 150px;
 }
@@ -35,10 +109,15 @@
     font-size: 16px;
     width:60%;
     float:left;
+   
 }
 
 .email div {
     margin-top: 20px;
+}
+
+#freeTrial input, #freeTrial select,#freeTrial input:focus{
+    border: 1px solid #D4D4D4;
 }
 
 .inputheight {
@@ -57,9 +136,20 @@
     margin-left:20%;
 }
 
+#freeTrial select{
+    width: 61%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
 .email input {
     margin-left:20%;
     margin-top: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+.email input:focus {
+   outline:none
 }
 
 #day {
@@ -88,6 +178,11 @@
     margin-right:5px;
 }
 
+ a{
+    text-decoration: none;
+    color: #4C89F0;
+    font-weight: 600;
+ }
 .class {
     clear:both;
 }
@@ -96,6 +191,15 @@
 } */
 .conditions {
     margin-left: 20%;
+}
+.login-link{
+    margin-left: 240px;
+    width: 30%;
+    font-weight: 600;
+}
+
+#eye{
+    color: purple;
 }
 
 button {
@@ -112,6 +216,7 @@ button {
     min-width: 145px;
     margin-left: 10px;
 }
+
 .primaryBtn {
     background-image: linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
     color: white;
@@ -121,6 +226,8 @@ button {
     color: black;
     border : 2px solid #8252FA;
 }
+
+ 
 .signup {
     width: 60%;
     margin-left: 20%;
@@ -131,11 +238,15 @@ button {
     color: white;
 }
 
+.pointer{
+    color: #666666;
+}
+
 
 .feedback {
     position:absolute;
     left:0;
-    padding:30px 0px;
+    padding:30px 15px;
     border-radius: 5px;
     font-size: 18px;
     top:25%;
@@ -148,4 +259,14 @@ button {
 .feedback-btn {
     opacity: 1;
     display: block;
+}
+
+#freeTrial{
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 50px;
+    min-width: 500px;
+}
+
+#day{
+    min-width: 500px;
 }

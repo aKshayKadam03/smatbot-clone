@@ -442,7 +442,6 @@ button{
     }
     .grid > div{
       min-width: 500px;
-      border: 1px solid black;
       text-align: center;
       padding: 0;
       margin: 0; 
@@ -664,7 +663,7 @@ button{
     }
     
     #partner > .gridPartner{
-      width: 100%;
+      width: 90%;
       margin: 50px auto;
       display: grid;
       grid-template-columns: 30% 30% 30%; 
