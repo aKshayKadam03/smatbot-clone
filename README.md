@@ -9,7 +9,7 @@
 </ul>
  <h4>Reference</source>
    <ul>
-       <li>Images - <a href = "https://developer.mozilla.org/en-US/" >MDN Docs<a></li>
+       <li><a href = "https://developer.mozilla.org/en-US/" >MDN Docs<a></li>
    <ul>
 
 <h2>Smatbot is a clone of the original smatbot website which deals with the development of AI chat bots for their costumers</h2>
