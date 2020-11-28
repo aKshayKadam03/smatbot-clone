@@ -809,6 +809,7 @@ button {
     bottom: 0;
     width: 100%;
     background-color: #FAFAFB;
+    margin-top: -20px;
   }
   
   .grid{
