@@ -297,38 +297,6 @@ button {
 
 /* --------------------------------------------------------------smatBot End------------------------------------------------------------------- */
 
-/* feedback and smatagent starts */
-
-
-
-.review i.fa {
-  color:#ffc000;
-}
-.feedback-color {
-  color:#777;
-  font-size: 12px;
-  margin:20px;
-}
-.feedback-image img {
-  margin-top: 40px;
-}
-.color {
-  color:#777;
-}
-.smatagent-size {
-  font-size: 16px;
-}
-.smatagent-image img {
-  width:50%;
-  height:400px;
-  margin: 40px 25% 40px 25%;
-}
-.smatagent {
-  font-size:22px;
-}
-
-
-/* feedback and smatagent ends */
 #blog{
   width: 90%;
   margin: 0 auto 80px;
@@ -553,7 +521,7 @@ button {
  /* --------------------------------------------------Usecases start ---------------------------------------- */
 
  #useCase {
-  width: 70%;
+  width: 80%;
   margin: 100px auto;
   min-width: 500px;
 }
@@ -841,6 +809,7 @@ button {
     bottom: 0;
     width: 100%;
     background-color: #FAFAFB;
+    margin-top: -20px;
   }
   
   .grid{

@@ -305,7 +305,7 @@ font-family: 'Montserrat', sans-serif;
     font-family: "Rubik" sans-serif;
   } 
   #pricing-mid {
-      width:95%;
+      width:100%;
       align-items: center;
       /* margin:10px 40px; */
   }
@@ -464,6 +464,8 @@ details,summary{
     bottom: 0;
     width: 100%;
     background-color: #FAFAFB;
+    margin-top: -20px;
+    font-family: 'Rubik', sans-serif;
   }
   
   .grid{
@@ -482,8 +484,6 @@ details,summary{
     margin-left: 40px; 
     max-width: 350px;
   }
-  
-  
   
   #footer > .one{
     grid-area: a;
@@ -580,11 +580,11 @@ details,summary{
   }
  
  
+ 
   /*---------------------------------------------- Footer End ------------------------------------- */
   
   
   
-
   
   
     /*---------------------------------------------- Media Queries Start ------------------------------------- */
